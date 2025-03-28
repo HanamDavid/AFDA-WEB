@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AFDA-WEB</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+</head>
+
+<body d-flex flex-column align-items-center justify-content-center vh-100>
+    <div class="container mt-5 row">
+        <div class="row mini_nav align-items-center justify-content-between">
+            <img class="text-justify logo col-auto" src="images/AFDA_Logo.png">
+            <a class="col-auto text-justify" href="/">Github</a>
+        </div>
+        <div class="row main_content">
+            <div class="p-4" >
+                <form id="upload-form">
+                    <div class="mb-3">
+                        <label for="audio-file" class="form-label">Welcome</label>
+                        <p>Here in AFDA-WEB you can uploud your own audio-files and get an answer to the AFDA-API</p>
+                        <input type="file" class="form-control" id="audio-file" accept=".wav,.mp3,.ogg,.flac" required>
+                    </div>
+                    <button type="submit" class="btn btn-warning w-100">send</button>
+                </form>
+                <div id="result" class="mt-3 text-center"></div>
+                <p>if you want to make sure about the prediction, go to your insurance service<p>
+            </div>
+        </div>
+    </div>
+    <script src="js/app.js"></script>
+</body>
+
+</html>
