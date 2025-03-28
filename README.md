@@ -54,7 +54,7 @@ git clone https://github.com/HanamDavid/AFDA-WEB
 cd AFDA-WEB
 docker-compose up --build
 ```
-Then, access the web interface at **http://localhost:8000**
+Then, access the web interface at **http://localhost:8080**
 
 
 ## 📜 License
